@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/txt_john"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="John McDonald"
+        android:textSize="26sp"
+        android:textColor="#0A0A0A"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintVertical_bias="0.05"
+        />
+
+    <ImageView
+        android:id="@+id/img_location"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/location"
+        android:foregroundGravity="clip_horizontal|bottom"
+        app:layout_constraintTop_toBottomOf="@id/txt_john"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.14"/>
+
+    <TextView
+        android:id="@+id/txt_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Los Angles, CA"
+        android:textSize="16sp"
+        android:textColor="#0A0A0A"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintTop_toBottomOf="@id/txt_john"
+        app:layout_constraintLeft_toRightOf="@id/img_location"/>
+
+    <Button
+        android:id="@+id/btn_follow"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:text="Follow"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"
+        android:background="@drawable/button_design"
+        app:layout_constraintTop_toBottomOf="@id/img_location"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.2"
+        tools:ignore="MissingConstraints"/>
+
+    <ImageView
+        android:id="@+id/img_john"
+        android:layout_width="110dp"
+        android:layout_height="150dp"
+        android:src="@drawable/john"
+        app:layout_constraintLeft_toRightOf="@id/txt_john"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"/>
+
+    <TextView
+        android:id="@+id/txt_post_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="34"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#0C0C0C"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@id/btn_follow"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25"/>
+
+    <TextView
+        android:id="@+id/txt_follow_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1256"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#0C0C0C"
+        android:padding="10dp"
+        android:layout_marginLeft="25dp"
+        app:layout_constraintTop_toBottomOf="@id/btn_follow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25"
+        app:layout_constraintLeft_toRightOf="@id/txt_post_no"/>
+
+    <TextView
+        android:id="@+id/txt_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Posts"
+        android:textSize="13sp"
+        app:layout_constraintTop_toBottomOf="@id/txt_post_no"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.13" />
+
+    <TextView
+        android:id="@+id/txt_follow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Followers"
+        android:textSize="13sp"
+        app:layout_constraintLeft_toRightOf="@id/txt_post"
+        app:layout_constraintTop_toBottomOf="@id/txt_follow_no"
+        android:layout_marginLeft="35dp"/>
+
+    <ImageView
+        android:id="@+id/img_one"
+        android:layout_width="60dp"
+        android:layout_height="90dp"
+        android:src="@drawable/location_one"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_post"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:id="@+id/img_two"
+        android:layout_width="60dp"
+        android:layout_height="90dp"
+        android:src="@drawable/location_two"
+        app:layout_constraintLeft_toRightOf="@id/img_one"
+        app:layout_constraintTop_toBottomOf="@id/txt_post"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:id="@+id/img_three"
+        android:layout_width="60dp"
+        android:layout_height="90dp"
+        android:src="@drawable/location_three"
+        app:layout_constraintLeft_toRightOf="@id/img_two"
+        app:layout_constraintTop_toBottomOf="@id/txt_post"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:id="@+id/img_four"
+        android:layout_width="60dp"
+        android:layout_height="90dp"
+        android:src="@drawable/location_four"
+        app:layout_constraintLeft_toRightOf="@id/img_three"
+        app:layout_constraintTop_toBottomOf="@id/txt_post"
+        android:layout_marginTop="20dp"/>
+
+     <androidx.cardview.widget.CardView
+         android:layout_width="60dp"
+         android:layout_height="90dp"
+         app:layout_constraintLeft_toRightOf="@id/img_four"
+         app:layout_constraintTop_toBottomOf="@id/txt_post"
+         android:layout_marginTop="20dp">
+
+    <ImageView
+        android:id="@+id/img_five"
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:background="#111010"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/txt_34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+34"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="photos"
+        android:textColor="#3F3D3D"
+        android:textSize="10sp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="15dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/img_firefox_icon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/firefox"
+        app:layout_constraintTop_toBottomOf="@id/img_one"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/img_facebook_icon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/facebook"
+        app:layout_constraintTop_toBottomOf="@id/img_two"
+        app:layout_constraintLeft_toRightOf="@id/img_firefox_icon"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/img_twitter_icon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/twitter"
+        app:layout_constraintTop_toBottomOf="@id/img_three"
+        app:layout_constraintLeft_toRightOf="@id/img_facebook_icon"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/img_instragram_icon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/instagram"
+        app:layout_constraintTop_toBottomOf="@id/img_four"
+        app:layout_constraintLeft_toRightOf="@id/img_twitter_icon"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/img_gmail_icon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/gmail"
+        app:layout_constraintTop_toBottomOf="@id/img_four"
+        app:layout_constraintLeft_toRightOf="@id/img_instragram_icon"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"/>
+
+    <View
+        android:id="@+id/linebreak"
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:background="#D9A3A39E"
+        app:layout_constraintTop_toBottomOf="@id/img_gmail_icon"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/txt_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About"
+        android:textSize="24sp"
+        android:textColor="#302D2D"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintTop_toBottomOf="@id/linebreak"/>
+
+    <TextView
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:text="Him poetic eye. Searched any remedies. Trial. Was poverty a schemes him he dressing mountains and as surprise haven't subject and could a entered would in the of be not posts, doing the never publication legs."
+        app:layout_constraintTop_toBottomOf="@id/txt_about"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
